@@ -1,17 +1,16 @@
 .sidebar {
   width: 300px;
   height: 100vh;
-  background-color: #333;
-  color: white;
+  background-color: #ffffff;
 }
 
 .sidebar h2 {
   margin-bottom: -16px;
   text-align: center;
   font-size: 16px;
-  border: 1px solid #ffffff;
+  border: 1px solid #000000;
   padding: 10px;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(185, 185, 185);
 }
 
 .sidebar ul {
@@ -21,7 +20,7 @@
 
 .sidebar li {
   margin: 0px 0;
-  border: 1px solid #ffffff;
+  border: 1px solid #000000;
   padding: 2px;
   display: flex;
 }
@@ -68,7 +67,7 @@
 }
 
 .item:hover {
-    background-color: #90c4bb; /* O cualquier color que prefieras */
+    background-color: #89b6ae; 
 }
 
 .item span {

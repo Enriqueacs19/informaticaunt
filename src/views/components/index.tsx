@@ -1,0 +1,1 @@
+export {default as BarraNavegacion} from './barra-navegacion/BarraNavegacion'

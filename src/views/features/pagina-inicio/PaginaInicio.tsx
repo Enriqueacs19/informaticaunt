@@ -1,4 +1,5 @@
-import style from './paginaInicio.module.css';
+import styles from './paginaInicio.module.css';
+import {BarraNavegacion} from '../../components';
 
 function PaginaInicio() {
 

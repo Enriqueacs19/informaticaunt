@@ -1,7 +1,6 @@
 import styles from './paginaInicio.module.css';
-import {BarraNavegacion} from '../../components';
-import Sidebar from '../../../components/Sidebar/Sidebar';
-import styles from './paginaInicio.module.css';
+import { Sidebar } from '../../components';
+
 
 function PaginaInicio() {
   return (

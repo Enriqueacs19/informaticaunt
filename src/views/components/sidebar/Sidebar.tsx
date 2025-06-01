@@ -6,7 +6,7 @@ import iconPreMa from '../../assets/iconPreMatricula.png';
 import iconGestionDocs from '../../assets/iconGestionDocs.png';
 import iconCursosDocente from '../../assets/iconCursosDocente.png';
 import iconTramitesFut from '../../assets/iconTramitesFut.png';
-import { useUser } from '../../user-context/userContext';
+import { useUser } from '../../context/userContext';
 import iconInfoDocente from '../../assets/iconDocenteInfo.png';
 import iconInfoAdmin from '../../assets/iconAdminInfo.png';
 

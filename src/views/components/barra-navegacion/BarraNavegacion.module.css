@@ -1,0 +1,26 @@
+@import "../../../index.css";
+
+body {
+    width: 100%;
+}
+
+.barraNavegacion {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.botonNavegacion {
+    margin: 0 10px;
+}
+
+.botonIniciarSesionLog {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.iconoSesion {
+    width: 30px;
+}

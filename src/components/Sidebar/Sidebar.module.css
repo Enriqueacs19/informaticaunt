@@ -1,0 +1,77 @@
+.sidebar {
+  width: 300px;
+  height: 100vh;
+  background-color: #333;
+  color: white;
+}
+
+.sidebar h2 {
+  margin-bottom: -16px;
+  text-align: center;
+  font-size: 16px;
+  border: 1px solid #ffffff;
+  padding: 10px;
+  background-color: rgb(0, 0, 0);
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 0px 0;
+  border: 1px solid #ffffff;
+  padding: 2px;
+  display: flex;
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+}
+
+.sidebar a:hover {
+  text-decoration: underline;
+}
+
+.botonCerrarSesion {
+  margin-top: 20px;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.botonCerrarSesion:hover {
+  background-color: #ff1a1a;
+}
+.logoSidebar{
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+.icons{
+    width: 15%;
+    padding: 2%;
+}
+
+.item {
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.item:hover {
+    background-color: #90c4bb; /* O cualquier color que prefieras */
+}
+
+.item span {
+    margin-left: 12px;
+    font-weight: bold;
+}

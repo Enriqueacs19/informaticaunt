@@ -1,0 +1,8 @@
+.pageContainer {
+  display: flex;
+}
+
+.mainContent {
+  flex: 1;
+  padding: 20px;
+}

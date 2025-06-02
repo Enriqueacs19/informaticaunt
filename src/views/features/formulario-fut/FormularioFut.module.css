@@ -1,17 +1,70 @@
 @import "../../../App.css";
+
+/* FormularioFut.module.css */
 .pageContainer {
-  display: flex;
-}
-
-.Container {
-  flex: 1;
-  padding: 20px;
-}
-
-.subTitle{
     display: flex;
+    font-family: Arial, sans-serif;
 }
 
-.icons{
-    width: 1%;
+.mainContent {
+    flex: 1;
+    padding: 40px;
+}
+
+.title {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.subTitle {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.formWrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario input[type="file"],
+.formulario textarea {
+    width: 100%;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.dateGroup {
+    display: flex;
+    gap: 8px;
+}
+
+.dateGroup input {
+    width: 30%;
+}
+
+button[type="submit"] {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
 }

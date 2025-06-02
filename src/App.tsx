@@ -25,7 +25,7 @@ function App() {
         <BarraNavegacion></BarraNavegacion>
         <Routes>
           <Route path='/' element={<PaginaInicio></PaginaInicio>}></Route>
-          <Route path='/IniciarSesion' element={<IniciarSesion></IniciarSesion>}></Route>
+          <Route path='/iniciar-sesion' element={<IniciarSesion></IniciarSesion>}></Route>
           <Route path='/PreMatricula' element={<PaginaPreMatricula></PaginaPreMatricula>}></Route>
           <Route path='/FormularioFut' element={<PaginaFormularioFut></PaginaFormularioFut>}></Route>
           <Route path='/cargar-documentos' element={<PaginaCargarDocumentos></PaginaCargarDocumentos>}></Route>

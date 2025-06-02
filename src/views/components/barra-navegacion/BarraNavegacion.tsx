@@ -1,6 +1,6 @@
 import styles from './BarraNavegacion.module.css'
 import { Link } from 'react-router-dom';
-import logo from '../../assets/vite.svg'
+import logo from '../../assets/logo.png'
 import userIcon from '../../assets/login.png';
 import { useAuth } from '../../context/AuthContext';
 
@@ -11,32 +11,50 @@ function BarraNavegacion() {
     return(
         <>
             <nav className={styles.barraNavegacion}>
+
                 <div className={styles.logoNavegacion}>
                     <Link to='/'>
-                        <img src={logo} alt="Logo de Informatica"/>
+                        <img className={styles.imgLogo} src={logo} alt="Logo de Informatica"/>
                     </Link>
                 </div>
-                <button className={styles.botonNavegacion}>Inicio</button>
-                <button className={styles.botonNavegacion}>Noticias</button>
-                <button className={styles.botonNavegacion}>Convenios</button>
-                <button className={styles.botonNavegacion}>Docentes</button>
-                <button className={styles.botonNavegacion}>Malla Curricular</button>
-                <div className={styles.botonIniciarSesion} >
+
+                <Link to='/' style={{textDecoration: 'none'}}>
+                    <p className={styles.botonNavegacion}>Inicio</p>
+                </Link>
+
+                <Link to='/noticias' style={{textDecoration: 'none'}}>
+                    <p className={styles.botonNavegacion}>Noticias</p>
+                </Link>
+
+                <Link to='/convenios' style={{textDecoration: 'none'}}>
+                    <p className={styles.botonNavegacion}>Convenios</p>
+                </Link>
+
+                <Link to='/docentes' style={{textDecoration: 'none'}}>
+                    <p className={styles.botonNavegacion}>Docentes</p>
+                </Link>
+
+                <Link to='/malla-curricular' style={{textDecoration: 'none'}}>
+                    <p className={styles.botonNavegacion}>Malla Curricular</p>
+                </Link>
+
+                <div className={styles.botonIniciarSesion}>
                     {!logueado ? (
-                        <Link to='/IniciarSesion'>
+                        <Link to='/iniciar-sesion'>
                             <button className={styles.botonIniciarSesionLog}>
-                                Iniciar Sesión
+                                <p>Iniciar Sesión</p>
                                 <img className={styles.iconoSesion} src={userIcon} alt="Icono Usuario" />
                             </button>
                         </Link>
                     ) : (
-                        <Link to='/IniciarSesion'>
-                            <button>
+                        <Link to='/iniciar-sesion'>
+                            <button className={styles.botonIniciarSesionLogin}>
                                 <img className={styles.iconoSesion} src={userIcon} alt="Icono Usuario" />
                             </button>
                         </Link>
                     )}
                 </div>
+                
             </nav>
         </>
     )

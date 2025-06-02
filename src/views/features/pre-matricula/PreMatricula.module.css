@@ -1,17 +1,110 @@
 @import "../../../App.css";
+
 .pageContainer {
-  display: flex;
+  display: flex;                          
+  
 }
 
-.Container {
-  flex: 1;
-  padding: 20px;
+.container {
+  flex: 1;                     
+  padding: 20px;              
+ 
+  border-radius: 8px;        
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+                
 }
 
-.subTitle{
+.container h1 {
+  font-size: 35px;                
+  color: #333333;     
+  border-bottom: 1px solid #000000; 
+  padding: 1%;      
+}
+
+.subTitle {
+  display: flex;               
+  align-items: center;  
+  justify-content: space-between;       
+  font-size: 28px;           
+  color: #555555;             
+  margin-top: 10px; 
+  padding: 1%;  
+}
+
+.icons {
+  width: 24px;                 
+  height: 24px;                          
+  cursor: pointer;             
+  transition: transform 0.2s ease;  
+  margin-right: 10%;
+}
+
+.icons:hover {
+  transform: scale(1.1);       
+}
+
+.table {
+  width: 76%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.table th,
+.table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+.table thead {
+  background-color: #f0f0f0;
+}
+
+.placeholderCell {
+  text-align: center;
+  font-style: italic;
+  color: #999999;
+}
+
+.cursosDisponibles{
     display: flex;
+    justify-content: space-between;
 }
 
-.icons{
-    width: 1%;
+.botonSelect {
+  margin: 10px;
+  background-color: #03136d;
+  color: white;
+  width: fit-content;
+  height: fit-content;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 0.5%;
+  margin-right: 19%;
+  margin-left: 1%;
+  margin-top: 3%;
+}
+
+.botonSelect:hover {
+  background-color: #3329c7;
+}
+
+.final{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1%;
+}
+
+.botonConfirmar{
+    background-color: #03136d;
+    color: #ffffff;
+    width: fit-content;
+    height: fit-content;
+    padding: 0.5%;
+    margin-right: 50%;
+    margin-top: 1%;
+}
+
+.botonConfirmar:hover{
+    background-color: #3329c7;
 }

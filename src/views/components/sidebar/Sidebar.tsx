@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import styles from './Sidebar.module.css'; 
+import styles from './Sidebar.module.css';
 import iconInfo from '../../assets/iconPersonalInfo.png';
 import logo from '../../assets/logo.png';
 import iconPreMa from '../../assets/iconPreMatricula.png';
@@ -12,10 +12,10 @@ import iconInfoAdmin from '../../assets/iconAdminInfo.png';
 
 const Sidebar = () => {
     const navigate = useNavigate();
-    const { userType } = useUser(); 
+    const { userType } = useUser();
 
     const handleCerrarSesion = () => {
-        navigate('/ConfirmacionCerrarSesion'); 
+        navigate('/ConfirmacionCerrarSesion');
     };
 
     return (
@@ -50,20 +50,20 @@ const Sidebar = () => {
                     )}
                     {userType === 'admin' && (
                         <>
-                        <li onClick={() => navigate('/gestionar-documentos')} className={styles.item}>
-                            <img src={iconGestionDocs} alt="iconGestionDocs" className={styles.icons} />
-                            <span>Gestionar Documentos</span>
-                        </li>
-                        <li onClick={() => navigate('/asignar-curso-docente')} className={styles.item}>
-                            <img src={iconCursosDocente} alt="iconCursoDocente" className={styles.icons} />
-                            <span>Asignar Curso Docente</span>
-                        </li>
+                            <li onClick={() => navigate('/cargar-documentos')} className={styles.item}>
+                                <img src={iconGestionDocs} alt="iconGestionDocs" className={styles.icons} />
+                                <span>Gestionar Documentos</span>
+                            </li>
+                            <li onClick={() => navigate('/asignar-curso-docente')} className={styles.item}>
+                                <img src={iconCursosDocente} alt="iconCursoDocente" className={styles.icons} />
+                                <span>Asignar Curso Docente</span>
+                            </li>
                         </>
                     )}
                 </ul>
             </nav>
-            <button 
-                type="button" 
+            <button
+                type="button"
                 className={styles.botonCerrarSesion}
                 onClick={handleCerrarSesion}
             >

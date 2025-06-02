@@ -13,22 +13,22 @@ function PaginaFormularioFut() {
                         <input type="text" />
 
                         <label>Nombre:</label>
-                        <input type="text" value="Alem Sebastian Sánchez Chunga" readOnly />
+                        <input type="text" defaultValue="Alem Sebastian Sánchez Chunga" />
 
                         <label>DNI:</label>
-                        <input type="text" value="75720362" readOnly />
+                        <input type="text" defaultValue="75720362" />
 
                         <label>E-mail:</label>
-                        <input type="email" value="alem20x@gmail.com" readOnly />
+                        <input type="email" defaultValue="alem20x@gmail.com" />
 
                         <label>Nº Matrícula / Cod. Trabajador:</label>
-                        <input type="text" value="1512700921" readOnly />
+                        <input type="text" defaultValue="1512700921" />
 
                         <label>Facultad / Oficina:</label>
-                        <input type="text" value="Ciencias Físicas y Matemáticas" readOnly />
+                        <input type="text" defaultValue="Ciencias Físicas y Matemáticas" />
 
                         <label>Escuela / Departamento:</label>
-                        <input type="text" value="Informática" readOnly />
+                        <input type="text" defaultValue="Informática" />
 
                         <label>Fecha :</label>
                         <div className={styles.dateGroup}>

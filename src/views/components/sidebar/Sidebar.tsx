@@ -54,7 +54,7 @@ const Sidebar = () => {
                                 <img src={iconGestionDocs} alt="iconGestionDocs" className={styles.icons} />
                                 <span>Gestionar Documentos</span>
                             </li>
-                            <li onClick={() => navigate('/asignar-curso-docente')} className={styles.item}>
+                            <li onClick={() => navigate('/asignar-docente')} className={styles.item}>
                                 <img src={iconCursosDocente} alt="iconCursoDocente" className={styles.icons} />
                                 <span>Asignar Curso Docente</span>
                             </li>

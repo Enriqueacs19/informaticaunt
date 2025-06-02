@@ -1,4 +1,4 @@
-import styles from './paginaInicio.module.css';
+import styles from './PaginaInicio.module.css';
 
 
 function PaginaInicio() {

@@ -1,18 +1,12 @@
 @import "../../../index.css";
 
-a {
+.barraNavegacion a {
     all: unset;
     cursor: pointer;
 }
 
-p{
-    font-size: 25px;
-}
-
-
-
 .imgLogo {
-    width: 200px;
+    width: 100px;
 }
 
 .barraNavegacion {
@@ -22,7 +16,7 @@ p{
 }
 
 .barraNavegacion p{
-    font-size: 25px;
+    font-size: 15px;
 }
 
 .botonNavegacion {

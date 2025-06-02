@@ -2,6 +2,7 @@ import styles from './BarraNavegacion.module.css'
 import { Link } from 'react-router-dom';
 import logo from '../../assets/logo.png'
 import userIcon from '../../assets/login.png';
+import iconoPerfil from '../../assets/iconoPerfil.png'
 import { useAuth } from '../../context/AuthContext';
 
 function BarraNavegacion() {
@@ -47,10 +48,8 @@ function BarraNavegacion() {
                             </button>
                         </Link>
                     ) : (
-                        <Link to='/iniciar-sesion'>
-                            <button className={styles.botonIniciarSesionLogin}>
-                                <img className={styles.iconoSesion} src={userIcon} alt="Icono Usuario" />
-                            </button>
+                        <Link to='/perfil'>
+                            <img className={styles.iconoSesion} src={iconoPerfil} alt="Icono Usuario" />
                         </Link>
                     )}
                 </div>

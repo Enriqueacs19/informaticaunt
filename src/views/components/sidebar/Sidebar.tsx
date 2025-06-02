@@ -7,15 +7,18 @@ import iconGestionDocs from '../../assets/iconGestionDocs.png';
 import iconCursosDocente from '../../assets/iconCursosDocente.png';
 import iconTramitesFut from '../../assets/iconTramitesFut.png';
 import { useUser } from '../../context/userContext';
+import { useAuth } from '../../context/AuthContext'; // <-- NUEVO
 import iconInfoDocente from '../../assets/iconDocenteInfo.png';
 import iconInfoAdmin from '../../assets/iconAdminInfo.png';
 
 const Sidebar = () => {
     const navigate = useNavigate();
     const { userType } = useUser();
+    const { logout } = useAuth(); // <-- NUEVO
 
     const handleCerrarSesion = () => {
-        navigate('/ConfirmacionCerrarSesion');
+        logout();                // <-- Cambia el estado global
+        navigate('/');           // <-- Redirige al home
     };
 
     return (
@@ -25,29 +28,32 @@ const Sidebar = () => {
             <nav>
                 <ul>
                     <li onClick={() => navigate('/informacion-personal')} className={styles.item}>
-                        {(userType === 'estudiante') && (
+                        {userType === 'estudiante' && (
                             <img src={iconInfo} alt="iconPersonalInfo" className={styles.icons} />
                         )}
-                        {(userType === 'admin') && (
+                        {userType === 'admin' && (
                             <img src={iconInfoAdmin} alt="iconPersonalInfoAdmin" className={styles.icons} />
                         )}
-                        {(userType === 'docente') && (
+                        {userType === 'docente' && (
                             <img src={iconInfoDocente} alt="iconPersonalInfoDocente" className={styles.icons} />
                         )}
                         <span>Información Personal</span>
                     </li>
+
                     {(userType === 'estudiante' || userType === 'admin') && (
                         <li onClick={() => navigate('/PreMatricula')} className={styles.item}>
                             <img src={iconPreMa} alt="iconPreMatricula" className={styles.icons} />
                             <span>Pre-Matrícula</span>
                         </li>
                     )}
+
                     {(userType === 'estudiante' || userType === 'docente' || userType === 'admin') && (
                         <li onClick={() => navigate('/FormularioFut')} className={styles.item}>
                             <img src={iconTramitesFut} alt="iconTramitesFut" className={styles.icons} />
                             <span>Trámites FUT</span>
                         </li>
                     )}
+
                     {userType === 'admin' && (
                         <>
                             <li onClick={() => navigate('/cargar-documentos')} className={styles.item}>

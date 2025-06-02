@@ -1,0 +1,79 @@
+@import "../../../../App.css";
+
+.pageContainer {
+    display: flex;
+    font-family: Arial, sans-serif;
+}
+
+.mainContent {
+    flex: 1;
+    padding: 40px;
+}
+
+.tabSelector {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.activeTab {
+    color: black;
+    cursor: default;
+    border-bottom: 2px solid black;
+}
+
+.inactiveTab {
+    color: gray;
+    cursor: pointer;
+}
+
+.formWrapper {
+    margin-top: 40px;
+}
+
+.formulario {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.formulario input,
+.formulario select {
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.documentTable table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.documentTable th,
+.documentTable td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.documentTable th {
+    background-color: #f5f5f5;
+}
+
+.documentTable button {
+    padding: 5px 10px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.documentTable button:hover {
+    background-color: #c0392b;
+}

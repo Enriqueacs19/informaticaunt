@@ -11,13 +11,21 @@
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
+.tituloIntro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.tituloIntro h1 {
     margin-bottom: 8px;
 }
 
 .contenedor p {
     margin: 4px 0;
     font-size: 14px;
+    text-align: left;
 }
 
 .contenedor a {
@@ -43,7 +51,7 @@ h1 {
 .logoGoogle {
     width: 20px;
     height: 20px;
-}   
+}
 
 .divisor {
     display: flex;
@@ -66,7 +74,9 @@ h1 {
 }
 
 input[type="text"],
-input[type="password"] {
+input[type="email"],
+input[type="password"],
+input[type="date"] {
     width: 100%;
     padding: 8px;
     margin-top: 4px;
@@ -77,32 +87,38 @@ input[type="password"] {
     box-sizing: border-box;
 }
 
-button {
+button[type="submit"] {
     margin-top: 10px;
     width: 100%;
     padding: 10px;
     background-color: #f0f0f0;
     border: 1px solid #ccc;
     border-radius: 6px;
+    color: black;
     font-size: 16px;
     cursor: pointer;
 }
 
-.parteInputContraseña {
+.parteInputIcono {
     display: flex;
     align-items: center;
     position: relative;
 }
 
-.parteInputContraseña input {
-    padding-right: 30px;
-}
-
-.iconoContraseña {
+.iconoInput {
     position: absolute;
     top: 11px;
     right: 10px;
     width: 20px;
     cursor: pointer;
     opacity: 0.6;
+}
+
+.checkbox {
+    display: flex;
+    align-items: flex-start;
+    gap: 6px;
+    font-size: 12px;
+    margin-top: 10px;
+    text-align: left;
 }

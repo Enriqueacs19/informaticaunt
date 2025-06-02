@@ -1,4 +1,3 @@
-import { Sidebar } from '../../components';
 import { useState } from 'react';
 import styles from './MallaCurricular.module.css';
 import CursoBox from './CursoBox';
@@ -119,7 +118,6 @@ function MallaCurricular(): JSX.Element {
 
     return (
         <div className={styles.pageContainer}>
-            <Sidebar />
             <div className={styles.content}>
                 <h1 className={styles.title}>Malla Curricular</h1>
                 <div className={styles.cuadroMalla}>

@@ -6,3 +6,4 @@ export { default as PaginaCargarDocumentos } from './gestionar-documentos/cargar
 export { default as PaginaEliminarDocumentos } from './gestionar-documentos/eliminar-documentos/EliminarDocumentos';
 export { default as AsignarDocente } from './asignar-docente/AsignarDocente';
 export { default as PaginaRegistrarse } from './pagina-registrar/PaginaRegistrar';
+export { default as PaginaPerfil } from './pagina-perfil/PaginaPerfil';

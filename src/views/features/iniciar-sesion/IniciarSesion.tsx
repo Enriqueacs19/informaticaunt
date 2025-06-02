@@ -17,7 +17,7 @@ function IniciarSesion() {
 
     const handleLogin = () => {
         login();                // Simula que el usuario está autenticado
-        navigate('/');          // Redirige al inicio
+        navigate('/perfil');          // Redirige al inicio
     };
 
     return (

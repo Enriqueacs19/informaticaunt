@@ -37,7 +37,7 @@ const Sidebar = () => {
                         <span>Información Personal</span>
                     </li>
                     {(userType === 'estudiante' || userType === 'admin') && (
-                        <li onClick={() => navigate('/pre-matricula')} className={styles.item}>
+                        <li onClick={() => navigate('/PreMatricula')} className={styles.item}>
                             <img src={iconPreMa} alt="iconPreMatricula" className={styles.icons} />
                             <span>Pre-Matrícula</span>
                         </li>

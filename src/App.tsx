@@ -4,6 +4,7 @@ import './App.css';
 import {IniciarSesion, PaginaInicio} from './views/features/index.tsx';
 import { BarraNavegacion } from './views/components/index.tsx';
 import { AuthProvider } from './views/context/AuthContext';
+import PaginaPreMatricula from './views/features/pre-matricula/PreMatricula.tsx';
 
 
 function ScrollToTop() {
@@ -26,6 +27,7 @@ function App() {
         <Routes>
           <Route path='/' element={<PaginaInicio></PaginaInicio>}></Route>
           <Route path='/IniciarSesion' element={<IniciarSesion></IniciarSesion>}></Route>
+          <Route path='/PreMatricula' element={<PaginaPreMatricula></PaginaPreMatricula>}></Route>
         </Routes>
       </AuthProvider>
     </Router>

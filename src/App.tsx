@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import './App.css';
-import { IniciarSesion, PaginaInicio, PaginaPreMatricula, PaginaFormularioFut, PaginaCargarDocumentos, PaginaEliminarDocumentos, AsignarDocente, MallaCurricular, PaginaRegistrarse, PaginaPerfil } from './views/features/index.tsx';
+import { IniciarSesion, PaginaInicio, PaginaPreMatricula, PaginaFormularioFut, PaginaCargarDocumentos, PaginaEliminarDocumentos, AsignarDocente, MallaCurricular, PaginaRegistrarse, PaginaPerfil, CambiarContrasena, EditarDatos, InformacionPersonal } from './views/features/index.tsx';
 import { BarraNavegacion } from './views/components/index.tsx';
 import { AuthProvider } from './views/context/AuthContext';
 
@@ -35,6 +35,9 @@ function App() {
           <Route path='/registrarse' element={<PaginaRegistrarse></PaginaRegistrarse>}></Route>
           <Route path='/perfil' element={<PaginaPerfil></PaginaPerfil>}></Route>
           <Route path='/registrarse' element={<PaginaRegistrarse></PaginaRegistrarse>}></Route>
+          <Route path='/cambiar-contrasena' element={<CambiarContrasena></CambiarContrasena>}></Route>
+          <Route path='/editar-datos' element={<EditarDatos></EditarDatos>}></Route>
+          <Route path='/informacion-personal' element={<InformacionPersonal></InformacionPersonal>}></Route>
         </Routes>
       </AuthProvider>
     </Router>

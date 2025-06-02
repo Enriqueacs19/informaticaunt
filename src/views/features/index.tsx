@@ -8,3 +8,6 @@ export { default as AsignarDocente } from './asignar-docente/AsignarDocente';
 export { default as MallaCurricular } from './malla-curricular/MallaCurricular';
 export { default as PaginaRegistrarse } from './pagina-registrar/PaginaRegistrar';
 export { default as PaginaPerfil } from './pagina-perfil/PaginaPerfil';
+export { default as InformacionPersonal } from './informacion-personal/datos-personales/InformacionPersonal';
+export { default as EditarDatos } from './informacion-personal/editar-datos/EditarDatos';
+export { default as CambiarContrasena } from './informacion-personal/cambiar-contraseña/CambiarContraseña';

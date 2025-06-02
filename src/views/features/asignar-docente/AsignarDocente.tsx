@@ -1,4 +1,4 @@
-import styles from './asignarDocente.module.css';
+import styles from './AsignarDocente.module.css';
 import { Sidebar } from '../../components/';
 import { useState } from 'react';
 

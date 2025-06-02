@@ -33,6 +33,7 @@ function App() {
           <Route path='/eliminar-documentos' element={<PaginaEliminarDocumentos></PaginaEliminarDocumentos>}></Route>
           <Route path='/registrarse' element={<PaginaRegistrarse></PaginaRegistrarse>}></Route>
           <Route path='/perfil' element={<PaginaPerfil></PaginaPerfil>}></Route>
+          <Route path='/registrarse' element={<PaginaRegistrarse></PaginaRegistrarse>}></Route>
         </Routes>
       </AuthProvider>
     </Router>

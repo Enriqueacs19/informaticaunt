@@ -1,7 +1,18 @@
 @import "../../../index.css";
 
-body {
-    width: 100%;
+a {
+    all: unset;
+    cursor: pointer;
+}
+
+p{
+    font-size: 25px;
+}
+
+
+
+.imgLogo {
+    width: 200px;
 }
 
 .barraNavegacion {
@@ -10,16 +21,26 @@ body {
     justify-content: space-around;
 }
 
+.barraNavegacion p{
+    font-size: 25px;
+}
+
 .botonNavegacion {
     margin: 0 10px;
+}
+
+.botonNavegacion:hover {
+    color: red;
 }
 
 .botonIniciarSesionLog {
     display: flex;
     align-items: center;
-    justify-content: space-around;
 }
 
+.botonIniciarSesionLog p{
+    margin-right: 10px;
+}
 
 .iconoSesion {
     width: 30px;

@@ -1,0 +1,17 @@
+@import "../../../App.css";
+.pageContainer {
+  display: flex;
+}
+
+.Container {
+  flex: 1;
+  padding: 20px;
+}
+
+.subTitle{
+    display: flex;
+}
+
+.icons{
+    width: 1%;
+}

@@ -43,7 +43,7 @@ const Sidebar = () => {
                         </li>
                     )}
                     {(userType === 'estudiante' || userType === 'docente' || userType === 'admin') && (
-                        <li onClick={() => navigate('/tramites-fut')} className={styles.item}>
+                        <li onClick={() => navigate('/FormularioFut')} className={styles.item}>
                             <img src={iconTramitesFut} alt="iconTramitesFut" className={styles.icons} />
                             <span>Trámites FUT</span>
                         </li>

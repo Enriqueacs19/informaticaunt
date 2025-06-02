@@ -3,7 +3,15 @@
   display: flex;
 }
 
-.mainContent {
+.Container {
   flex: 1;
   padding: 20px;
+}
+
+.subTitle{
+    display: flex;
+}
+
+.icons{
+    width: 1%;
 }

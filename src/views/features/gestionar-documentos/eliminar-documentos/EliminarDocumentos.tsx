@@ -3,7 +3,7 @@ import { Sidebar } from '../../../components';
 import { useState } from 'react';
 
 function PaginaEliminarDocumentos() {
-    const [vista, setVista] = useState("eliminar");
+    const [vista] = useState("eliminar");
 
     return (
         <div className={styles.pageContainer}>
